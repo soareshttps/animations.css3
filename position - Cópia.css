@@ -1,0 +1,30 @@
+#ft2{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    z-index: 2;
+    animation-name: f1;
+    animation-duration: 3s;
+    }
+#ft3{
+     position: absolute;
+     top: 50px;
+     left: 1250px;
+     z-index: 1;
+    animation-name: f2;
+    animation-duration: 3s;
+    } 
+#ft1{
+    position: absolute;
+    z-index: 0;
+    } 
+@keyframes f1{
+  from {left: 0%; }
+  to   { left: 100%; }
+ 
+}  
+@keyframes f2{
+    from {left: 100%; }
+    to   { left: 0%; }
+   
+  }            
