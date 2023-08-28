@@ -5,17 +5,25 @@
  body{
     background-color: antiquewhite;
  }
- .tx{
+ .tx1{
+    position: absolute;
     text-align: center;
     animation-duration: 6s;
-    animation-name: tx;
-    
+    animation-name: tx;  
+    animation-fill-mode: forwards; 
+}
+.tx2{
+    position: absolute;
+    text-align: center;
+    animation-duration: 6s;
+    animation-name: tx2;
+    animation-fill-mode: forwards;
 }
 
 .txweb{
     position: absolute;
-    top:700px;
-    left: 40%;
+    top: 500px;
+    left: 38%;
     animation-name: tx1;
     animation-duration: 6s;
 }
@@ -97,20 +105,27 @@
 
 }
 
-@keyframes tx {
-       0%{opacity: 0;}
+@keyframes tx2{
+    0%{left: 10%;top:90px;opacity: 0;}
        25%{color: darkgreen;}
        50%{color: forestgreen;}
        75%{color: darkolivegreen;}
-       100%{ color: black opacity: 1;}
+       100%{left:38.5%;top:100px; color: black ;opacity: 1;}
+}
+@keyframes tx {
+       0%{left: 10%;top:70px;opacity: 0;}
+       25%{color: darkgreen;}
+       50%{color: forestgreen;}
+       75%{color: darkolivegreen;}
+       100%{left:40.5%;top:50px; color: black ;opacity: 1;}
 }
 
 @keyframes tx1{
-    0%{opacity: 0;}
+    0%{left: 10%;top:500px;opacity: 0;}
     25%{color: darkred;}
     50%{color: firebrick;}
     75%{color: brown;}
-    100%{ color: black opacity: 1;}
+    100%{ left: 38%; top:500px;color: black; opacity: 1;}
 }
 
 @keyframes f1{
