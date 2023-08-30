@@ -2,9 +2,56 @@
     border: 1px black;
     padding: 0px;
  }
+ #r1{
+    position: absolute;
+    height: 35px;
+    width: 340px;
+    border-radius: 10%;
+    padding-left: 10px ;
+    animation-name: r1;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    font-size: 15px;
+    
+    
+    background-color: lightgreen;
+    
+ }
+ #r2{
+    position: absolute;
+    height: 35px;
+    width: 340px;
+    border-radius: 10%;
+    animation-name: r2;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    font-size: 10px;
+    display: inline-block;
+    text-align: left;
+    background-color: lightgreen;
+ }
  body{
     background-color: antiquewhite;
+    animation-name: bd;
+    animation-duration: 4s;
  }
+
+/*#clicar{
+    position: absolute;
+    font-size: 20px;
+    animation-duration: 6s;
+    animation-name: cliq;
+    animation-fill-mode: forwards;
+} 
+
+#processoseletivo{
+    position: absolute;
+    font-size: 20px;
+    animation-duration: 6s;
+    animation-name: ps;
+    animation-fill-mode: forwards;
+}*/
+
  .tx1{
     position: absolute;
     text-align: center;
@@ -22,16 +69,20 @@
 
 .txweb{
     position: absolute;
-    top: 500px;
     left: 38%;
     animation-name: tx1;
     animation-duration: 6s;
+    animation-fill-mode: forwards;
 }
 
  
 .ft {animation-fill-mode: forwards;
     } 
 #f1{position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 10%;
+    background-color: green;
     top: 200px;
     left: 100%;
     animation-name: f1;
@@ -40,6 +91,10 @@
    
 }
 #f2{position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 10%;
+    background-color: green;
     top: 200px;
     left: 0%;
     animation-name: f2;
@@ -47,13 +102,21 @@
     
 }
 #f3{position: absolute;
-   top: 280px;
+    width: 70px;
+    height: 70px;
+    border-radius: 10%;
+    background-color: green;
+    top: 280px;
     left: 100%;
     animation-name: f3;
     animation-duration: 4s ;
     
 }
 #f4{position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 10%;
+    background-color: green;
     top: 280px;
     left: 0px;
     animation-name: f4;
@@ -61,6 +124,10 @@
     
 }
 #f5{position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 10%;
+    background-color: green;
     bottom: 6000px;
     left: 100%;
     animation-name: f5;
@@ -68,6 +135,10 @@
     
 }
 #f6{position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 10%;
+    background-color: green;
     bottom: 6000px;
     left: 0px;
     animation-name: f6;
@@ -75,6 +146,10 @@
     
 }
 #f7{position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 10%;
+    background-color: green;
     bottom: 6000px;
     left: 100%;
     animation-name: f7;
@@ -82,6 +157,10 @@
     
 }
 #f8{position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 10%;
+    background-color: green;
     bottom: 6000px;
     left:0%;
     animation-name: f8;
@@ -89,6 +168,10 @@
     animation-duration: 4s ;
 }
 #f9{position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 10%;
+    background-color: green;
     bottom: 6000px;
     left: 100%;
     animation-name: f9;
@@ -97,11 +180,32 @@
     
 }
 #fbl{ position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: red;
     bottom: 20000px;
     left: 42%;
     animation-name: f10;
     
     animation-duration: 8s ;
+
+}
+
+@keyframes cliq{
+    0%{ left: 15%; top: 228px;color: darkgreen;opacity: 0%;}
+    25%{left: 15%; top: 228px; color: forestgreen;opacity: 0%;}
+    50%{ left: 15%; top: 228px;color: darkolivegreen;opacity: 0%;}
+    75%{ left: 15%; top: 228px;color: greenyellow;opacity: 75%;}
+    100%{left: 15%; top: 228px; color: green;opacity: 100%;}
+}
+
+@keyframes ps{
+    0%{ left: 21%; top: 200px;color: greenyellow;opacity: 0%;}
+    25%{left: 21%; top: 200px; color: darkgreen;opacity: 0%;}
+    50%{left: 21%; top: 200px; color: forestgreen;opacity: 0%;}
+    75%{ left: 21%; top: 200px;color: darkolivegreen;opacity: 75%;}
+    100%{left: 21%; top: 200px; color: green;opacity: 100%;}
 
 }
 
@@ -117,7 +221,7 @@
        25%{color: darkgreen;}
        50%{color: forestgreen;}
        75%{color: darkolivegreen;}
-       100%{left:40.5%;top:50px; color: black ;opacity: 1;}
+       100%{left:42.5%;top:50px; color: black ;opacity: 1;}
 }
 
 @keyframes tx1{
@@ -125,82 +229,96 @@
     25%{color: darkred;}
     50%{color: firebrick;}
     75%{color: brown;}
-    100%{ left: 38%; top:500px;color: black; opacity: 1;}
+    100%{ left: 38%; top:630px;color: black; opacity: 1;}
 }
 
 @keyframes f1{
-    0% {left: 100%; }
-    25%  { left: 47%; top: 500px; }
-    50% { left: 15%;top: 100px; }
-    75% { left: 78%; top: 450px}
-    100% { left: 47%; top: 200px}
+    0% {left: 100%; background-color: aquamarine; }
+    25%  { left: 47%; top: 500px; background-color:darkblue; }
+    50% { left: 15%;top: 100px; background-color:blue; }
+    75% { left: 78%; top: 450px; background-color:darkcyan;}
+    100% { left: 47%; top: 200px; background-color: green;}
    }  
   @keyframes f2{
-      0% {left: 45%; top:2 34px }
-      25% { left: 52%; top: 500px}
-      50% { left: 78%; top: 358px}
-      75% {left: 35%; top: 280px}
-      100% {left:52%; top:200px}
+      0% {left: 45%; top:2 34px; background-color: darkcyan; }
+      25% { left: 52%; top: 500px; background-color: blue;}
+      50% { left: 78%; top: 358px; background-color: darkblue;}
+      75% {left: 35%; top: 280px; background-color: aquamarine;}
+      100% {left:52%; top:200px; background-color: green;}
      }            
     @keyframes f3{
-        0%  {left: 10%; top: 800px }
-        25% {left: 32%; top: 280px }
-        50% {left: 52%; top: 600px }
-        75% {left: 72%; top: 500px }    
-        100% {left: 42%; top: 280px}                    
+        0%  {left: 10%; top: 800px; background-color: aquamarine; }
+        25% {left: 32%; top: 280px; background-color: darkblue; }
+        50% {left: 52%; top: 600px; background-color: blue; }
+        75% {left: 72%; top: 500px; background-color: darkcyan; }    
+        100% {left: 42%; top: 280px; background-color: green;}                    
        }  
       @keyframes f4{
-          0% {left: 15%; top: 450px }
-          25% {left: 47%; top: 280px}
-          50% {left: 60%; top: 600px}
-          75% {left: 80%; top: 750px}
-          100% {left: 47%; top: 280px}
+          0% {left: 15%; top: 450px; background-color: darkcyan; }
+          25% {left: 47%; top: 280px; background-color: blue;}
+          50% {left: 60%; top: 600px; background-color: darkblue;}
+          75% {left: 80%; top: 750px; background-color: aquamarine;}
+          100% {left: 47%; top: 280px; background-color: green;}
          }            
         @keyframes f5{
-            0% {left: 65%; top: 500px }
-            25% {left:42%; top: 360px}
-            50% {left: 36%; top: 450px}
-            75% {left: 82%; top: 500px}
-            100% {left: 42%; top: 360px}
+            0% {left: 65%; top: 500px; background-color: aquamarine; }
+            25% {left:42%; top: 360px; background-color: darkblue;}
+            50% {left: 36%; top: 450px; background-color: blue;}
+            75% {left: 82%; top: 500px; background-color: darkcyan;}
+            100% {left: 42%; top: 360px; background-color: green;}
            }  
             @keyframes f6{
-              0% {left: 23%; top: 450px }
-              25% { left: 47%; top: 360px }
-              50% {left: 70%; top: 570px}
-              75% {left: 90%; top: 350px}
-              100% {left: 47%; top: 360px}
+              0% {left: 23%; top: 450px; background-color: darkcyan; }
+              25% { left: 47%; top: 360px; background-color: blue; }
+              50% {left: 70%; top: 570px; background-color: darkblue;}
+              75% {left: 90%; top: 350px; background-color: aquamarine;}
+              100% {left: 47%; top: 360px; background-color: green;}
              }   
              @keyframes f7{
-                0% {left: 6%; top: 65px  }
-                25% {left: 80%; top:450px }
-                50% {left: 32%; top: 600px }
-                75% {left:65%; top: 360px}
-                100% {left: 52%; top: 360px}
+                0% {left: 6%; top: 65px; background-color: aquamarine;  }
+                25% {left: 80%; top:450px; background-color: darkblue; }
+                50% {left: 32%; top: 600px; background-color: blue; }
+                75% {left:65%; top: 360px; background-color: darkcyan;}
+                100% {left: 52%; top: 360px; background-color:green ;}
                
               }  
               @keyframes f8{
-                  0% {left: 10%; top: 150px }
-                  25% {left: 82%;top: 650px }
-                  50% {left: 25%; top: 450px }
-                  75% {left: 68%; top: 160px}
-                  100% {left: 42%; top: 440px}
+                  0% {left: 10%; top: 150px; background-color: darkcyan; }
+                  25% {left: 82%;top: 650px; background-color: blue; }
+                  50% {left: 25%; top: 450px; background-color: darkblue; }
+                  75% {left: 68%; top: 160px; background-color: aquamarine;}
+                  100% {left: 42%; top: 440px; background-color: green;}
                  
                 }    
                 @keyframes f9{
-                    0% {left: 8%; top: 700px }
-                    25% {left: 85%;top: 100px; }
-                    50% {left: 20%; top: 650px}
-                    75% {left: 78%; top: 800px}
-                    100% {left: 47%; top: 440px}
+                    0% {left: 8%; top: 700px; background-color: aquamarine; }
+                    25% {left: 85%;top: 100px; background-color: darkblue; }
+                    50% {left: 20%; top: 650px; background-color: blue;}
+                    75% {left: 78%; top: 800px; background-color:darkcyan;}
+                    100% {left: 47%; top: 440px; background-color: green;}
                    
                   }  
                   @keyframes f10 {
-                    0% {left: 42%; top: 800px}
-                    25% {left: 42%; top: 310px}
-                    50% {left: 42%; top: 710px}
-                    75% {left: 42%; top: 150px}
-                    100% {left:42% ; top: 200px }
-                   
+                    0% {left: 42%; top: 800px; background-color: deeppink;}
+                    25% {left: 42%; top: 310px; background-color: darkmagenta;}
+                    50% {left: 42%; top: 710px; background-color: fuchsia;}
+                    75% {left: 42%; top: 150px; background-color:mediumvioletred ;}
+                    100% {left:42% ; top: 200px; background-color: red; }
                   }
+@keyframes r1 {
+    0%{left: 18%; top: 228px;color: darkgreen;opacity: 0%;}
+    25%{left: 18%; top: 228px;color: forestgreen;opacity: 0%;}
+    50%{left: 18%; top: 228px; color: darkolivegreen;opacity: 0%;}
+    75%{ left: 18%; top: 228px;color: greenyellow;opacity: 75%;}
+    100%{left: 18%; top: 228px; color: black;opacity: 100%;}
+    
+}   
+@keyframes r2 {
+    0%{ left: 18%; top: 200px;color: greenyellow;opacity: 0%;}
+    25%{ left: 18%; top: 200px;color: darkgreen; opacity: 0%;}
+    50%{ left: 18%; top: 200px;color: forestgreen; opacity: 0%;}
+    75%{ left: 18%; top: 200px;color: darkolivegreen;opacity: 75%;}
+    100%{left: 18%; top: 200px; color: black; opacity: 100%;}
+}                                   
 
 
