@@ -4,53 +4,45 @@
  }
  #r1{
     position: absolute;
-    height: 35px;
-    width: 340px;
-    border-radius: 10%;
-    padding-left: 10px ;
     animation-name: r1;
-    animation-duration: 6s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
-    font-size: 15px;
-    
-    
-    background-color: lightgreen;
-    
+    font-size: 62px;
+    font-family: 'Lilita One', cursive;
+    text-align: center;
+    background-color: #459941;
+    text-shadow: 3px 2px #000;
+    padding: 0px 50px;
+    rotate: -3deg;
+    box-shadow: 5px 5px 5px #000;
  }
- #r2{
+ 
+
+ #r3{
+    font-family: 'Lilita One', cursive;
     position: absolute;
-    height: 35px;
-    width: 340px;
-    border-radius: 10%;
-    animation-name: r2;
-    animation-duration: 6s;
+    color: #fff;
+    animation-name: r3;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
-    font-size: 10px;
+    font-size: 62px;
     display: inline-block;
-    text-align: left;
-    background-color: lightgreen;
+    text-align: center;
+    background-color: #7FD47F;
+    text-shadow: 3px 2px #000;
+    padding: 0px 50px;
+    rotate: -3deg;
+    box-shadow: 5px 5px 5px #000;
+
  }
+
  body{
     background-color: antiquewhite;
     animation-name: bd;
     animation-duration: 4s;
  }
 
-/*#clicar{
-    position: absolute;
-    font-size: 20px;
-    animation-duration: 6s;
-    animation-name: cliq;
-    animation-fill-mode: forwards;
-} 
 
-#processoseletivo{
-    position: absolute;
-    font-size: 20px;
-    animation-duration: 6s;
-    animation-name: ps;
-    animation-fill-mode: forwards;
-}*/
 
  .tx1{
     position: absolute;
@@ -193,11 +185,11 @@
 }
 
 @keyframes cliq{
-    0%{ left: 15%; top: 228px;color: darkgreen;opacity: 0%;}
-    25%{left: 15%; top: 228px; color: forestgreen;opacity: 0%;}
-    50%{ left: 15%; top: 228px;color: darkolivegreen;opacity: 0%;}
-    75%{ left: 15%; top: 228px;color: greenyellow;opacity: 75%;}
-    100%{left: 15%; top: 228px; color: green;opacity: 100%;}
+    0%{ left: 15%; top: 150px;color: darkgreen;opacity: 0%;}
+    25%{left: 15%; top: 150px; color: forestgreen;opacity: 0%;}
+    50%{ left: 15%; top: 150px;color: darkolivegreen;opacity: 0%;}
+    75%{ left: 15%; top: 150px;color: greenyellow;opacity: 75%;}
+    100%{left: 15%; top: 150px; color: green;opacity: 100%;}
 }
 
 @keyframes ps{
@@ -229,7 +221,7 @@
     25%{color: darkred;}
     50%{color: firebrick;}
     75%{color: brown;}
-    100%{ left: 38%; top:630px;color: black; opacity: 1;}
+    100%{ left: 38%; top: 600px;color: black; opacity: 1;}
 }
 
 @keyframes f1{
@@ -306,19 +298,21 @@
                     100% {left:42% ; top: 200px; background-color: red; }
                   }
 @keyframes r1 {
-    0%{left: 18%; top: 228px;color: darkgreen;opacity: 0%;}
-    25%{left: 18%; top: 228px;color: forestgreen;opacity: 0%;}
-    50%{left: 18%; top: 228px; color: darkolivegreen;opacity: 0%;}
-    75%{ left: 18%; top: 228px;color: greenyellow;opacity: 75%;}
-    100%{left: 18%; top: 228px; color: black;opacity: 100%;}
+    0%{left: 0%; top: 100px;color: darkgreen;opacity: 0%;}
+    25%{left: 0%; top: 100px;color: forestgreen;opacity: 0%;}
+    50%{left: 0%; top: 100px; color: darkolivegreen;opacity: 0%;}
+    75%{ left: 0%; top: 100px;color: greenyellow;opacity: 75%;}
+    100%{left: 5%; top: 100px; color: #fff;opacity: 100%;}
     
-}   
-@keyframes r2 {
-    0%{ left: 18%; top: 200px;color: greenyellow;opacity: 0%;}
-    25%{ left: 18%; top: 200px;color: darkgreen; opacity: 0%;}
-    50%{ left: 18%; top: 200px;color: forestgreen; opacity: 0%;}
-    75%{ left: 18%; top: 200px;color: darkolivegreen;opacity: 75%;}
-    100%{left: 18%; top: 200px; color: black; opacity: 100%;}
-}                                   
+}  
 
+                     
+
+@keyframes r3 {
+    0%{left: 100%; top: 165px;color: darkgreen;opacity: 0%;}
+    25%{left: 100%; top: 165px;color: forestgreen;opacity: 0%;}
+    50%{left: 100%; top: 165px; color: darkolivegreen;opacity: 0%;}
+    75%{ left: 100%; top: 165px;color: greenyellow;opacity: 75%;}
+    100%{left: 12%; top: 165px; color: #fff;opacity: 100%;}
+}   
 
